@@ -3,11 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { Header } from "../components/Header";
 import { RaffleEntrance } from "../components/RaffleEntrance";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Smart Contract Raffle</title>
                 <meta name="description" content="A webapplication for the Raffle Smart Contract" />
@@ -16,7 +15,7 @@ const Home: NextPage = () => {
 
             <Header />
 
-            <main className={styles.main}>
+            <main>
               <RaffleEntrance />
             </main>
         </div>
